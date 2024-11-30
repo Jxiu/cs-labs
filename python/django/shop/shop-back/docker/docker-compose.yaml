@@ -1,0 +1,23 @@
+version: '3.8'  # 使用 Docker Compose 文件版本 3.8
+
+services:
+  mysql:
+    image: mysql:8.3  # 使用 MySQL 8.3 官方镜像
+    environment:
+      MYSQL_ROOT_PASSWORD: root  # 设置 MySQL root 用户的密码
+      MYSQL_DATABASE: root  # 创建一个初始数据库
+      MYSQL_USER: shop  # 创建一个 MySQL 用户
+      MYSQL_PASSWORD: Shop@202411  # 设置该用户的密码
+    volumes:
+      - ./data/mysql:/var/lib/mysql  # 定义数据卷映射
+    ports:
+      - "3306:3306"  # 将容器的 3306 端口映射到宿主机的 3306 端口
+    restart: unless-stopped  # 容器退出时总是重启，除非被手动停止
+
+#volumes:
+#  mysql-data:  # 定义数据卷，用于持久化 MySQL 数据
+
+#networks:
+#  default:
+#    external:
+#      name: my_network  # 如果需要，可以连接到一个已存在的网络
