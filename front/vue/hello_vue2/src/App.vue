@@ -1,0 +1,16 @@
+<template>
+  <Person/>
+</template>
+
+<script>
+import { component } from 'vue/types/umd'
+import Person from "./components/Person.vue"
+export default {
+  name: "App",
+  components:{Person}
+}
+</script>
+
+<style>
+
+</style>
