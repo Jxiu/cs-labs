@@ -3,6 +3,7 @@
 **/*.iml
 **/*.ipr
 **/*.iws
+**/docker/data/*
 
 # Visual Studio Code
 **/.vscode/
