@@ -1,33 +1,45 @@
 # hello_vue3
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+## 环境
+### nodejs
+- 版本
+  - nodejs 23.2.0
+#### npm镜像
+nrm工具：nrm是一个npm源管理器，允许你快速地在npm源间切换。
+```bash
+npm install -g nrm
+nrm ls
+# 测试速度
+nrm test
+# 使用淘宝镜像
+nrm use taobao
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+##### 项目配置
+- .npmrc文件
+- 配置淘宝镜像
+```txt
+registry=https://artifactory.sf-express.com/artifactory/api/npm/npm/
 ```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+#### 多环境管理-nvm
+nodejs 版本管理工具
+```bash
+# nvm 安装
+nvm -v
+nvm list available
+nvm install 23.2.0
+# check
+nvm list
+# 切换版本
+nvm use 22.11.0
 ```
+##### 项目配置
+- 新建.nvmrc文件
+- 配置node版本
+```txt
+v23.2.0
+```
+- vscode 插件`vsc-nvm`
+## 插件
+##### vscode 插件
+- Vue - Official
+- Ant Design Vue helper
+- vsc-nvm (nvm for vscode)
