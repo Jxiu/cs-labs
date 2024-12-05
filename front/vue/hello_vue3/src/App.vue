@@ -1,6 +1,6 @@
 <template>
     <div class="app">
-        <h2 class="title">vue路由测试</h2>
+        <Header></Header>
         <!-- 导航区 -->
         <div class="navigate">
             <RouterLink to="/home" active-class="active">首页</RouterLink>
@@ -16,14 +16,9 @@
 </template> 
 <script lang="ts" setup name="App">
     import { RouterView,RouterLink } from 'vue-router';
+    import Header from './components/Header.vue';
 </script>
 <style scoped>
-.title {
-    background-color: skyblue;
-    height: 70px;
-    border-radius: 10px;
-    text-align: center;
-}
 .navigate{
     /* display: flex;
     justify-content: space-between; */
