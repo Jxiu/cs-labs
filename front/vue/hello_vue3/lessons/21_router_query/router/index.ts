@@ -23,8 +23,7 @@ const router = createRouter({
             component: News,
             children:[
                 {
-                    name:'xiang',
-                    path: 'detail/:id/:title/:content?', // ?非必填
+                    path: 'detail',
                     component: Detail,
                 }
             ]
