@@ -3,7 +3,6 @@
         <!-- 导航区 -->
         <ul class=".left">
             <li v-for="news in newsList" :key="news.id">
-                <button @click="showDetail(news)">查看新闻</button>
                 <!-- 模板字符串语法 ${} 嵌入值-->
                 <!-- <RouterLink :to="`/news/detail?id=${news.id}&title=${news.title}&content=${news.content}`" :news="news">{{news.title}}</RouterLink> -->
                 <!-- <RouterLink :to="`/news/detail/${news.id}/${news.title}/${news.content}`" :news="news">{{news.title}}</RouterLink> -->
@@ -26,7 +25,7 @@
 
 <script setup lang="ts" namne="News">
 import { onMounted,onUnmounted, reactive } from 'vue';
-import { RouterView,RouterLink,useRouter } from 'vue-router';
+import { RouterView,RouterLink } from 'vue-router';
 
 const newsList = reactive([
     {id:"1",title:"减脂食物",content:"西蓝花"},
@@ -34,17 +33,7 @@ const newsList = reactive([
     {id:"3",title:"老毕登周末",content:"没有员工加班，就裁员！！"},
     {id:"4",title:"珠海航展",content:"歼十一上天，红箭19首现！！"},
 ])
-function showDetail(news){
-    // console.log(news)
-    // this.$router.push({
-    //     path:"/news/detail",
-    //     query:{
-    //         id:news.id,
-    //         title:news.title,
-    //         content:news.content,
-    //     }
-    // })
-}
+
 onMounted(()=>{
     console.log("News 视图挂载完成！")
 })
