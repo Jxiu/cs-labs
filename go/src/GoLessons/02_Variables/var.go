@@ -10,6 +10,9 @@ package main
  var A float32 = 3.14
  var B int64 = 123456789
  var C string = "hello world"
+ var CC string = `aa
+ aa\n 多行
+ 字符串`
  var D bool = true
  var E byte = 'a' // byte类型 int8
  var F rune = '中' //unicode编码 int32
@@ -53,6 +56,7 @@ func main(){
 	fmt.Println("A =", A)
 	fmt.Println("B =", B)
 	fmt.Println("C =", C)
+	fmt.Println("CC =", CC)
 	fmt.Println("D =", D)
 	fmt.Println("E =", E)
 	fmt.Printf("F = %s\n", F)

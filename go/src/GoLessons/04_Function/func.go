@@ -1,6 +1,17 @@
 package main
 
 import "fmt"
+/**
+ * 方法的定义规则
+接收者类型：方法的接收者类型可以是任何自定义类型（结构体、整数、字符串等）。
+方法名：方法名必须是唯一的，但在不同的类型上可以有相同的方法名（这称为方法重载，但 Go 中的方法重载与传统意义上的重载有所不同）。
+参数和返回值：方法可以有多个参数和返回值，与普通函数类似。
+
+	类型：
+	func [(receiverType)] [funcName]([paramType paramName, paramType paramName]) [(returnType,returnType)] {}
+
+	func(){} 匿名函数
+ */
 
 func foo1(a string, b int) int {
 	fmt.Println("a= ", a)
