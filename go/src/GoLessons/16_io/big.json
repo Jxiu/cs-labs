@@ -1,0 +1,186 @@
+{
+    "success": true,
+    "errorCode": "1000",
+    "errorMessage": "成功",
+    "date": "1748241638474",
+    "version": "10.201.85.71-A",
+    "env": "A",
+    "ip": "10.201.85.71",
+    "obj": {
+        "bizNo": "aF51fBeb-3EC1-eBD2-CcE4-60aE8CD9fFc7",
+        "serialNo": "01020108507120250526144038179207",
+        "waybillNo": "aF51fBeb-3EC1-eBD2-CcE4-60aE8CD9fFc7",
+        "serverTimeZone": "Asia/Hong_Kong",
+        "consignedTime": "2025-05-22 11:10:44",
+        "discountWaybillFeeDtoList": [
+            {
+                "success": true,
+                "errorSource": "SHIVA-OMS-DMS",
+                "errorCode": "1000",
+                "errorMessage": "成功",
+                "feeTypeCode": "1001",
+                "discountType": "price_per_object",
+                "discountValue": 8.0,
+                "feeAmt": 105.0,
+                "discountFeeAmt": 56.0,
+                "prefFeeAmt": 49.0,
+                "custCode": "0670030050",
+                "billCode": "0670030050",
+                "discountMeterageWeight": 7.0,
+                "packageFeeList": [
+                    {
+                        "packageNo": "packageNo_001",
+                        "actualWeight": 1.0,
+                        "discountFeeAmt": 8.0,
+                        "billingWeight": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_004",
+                        "actualWeight": 2.0,
+                        "discountFeeAmt": 16.0,
+                        "billingWeight": 2.0
+                    },
+                    {
+                        "packageNo": "packageNo_002",
+                        "actualWeight": 32.0,
+                        "discountFeeAmt": 8.0,
+                        "billingWeight": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_003",
+                        "actualWeight": 3.0,
+                        "discountFeeAmt": 24.0,
+                        "billingWeight": 3.0
+                    }
+                ]
+            },
+            {
+                "success": true,
+                "errorSource": "SHIVA-OMS-DMS",
+                "errorCode": "1000",
+                "errorMessage": "成功",
+                "feeTypeCode": "1028",
+                "discountType": "price_per_object",
+                "discountValue": 0.0,
+                "feeAmt": 4.0,
+                "discountFeeAmt": 0.0,
+                "prefFeeAmt": 4.0,
+                "custCode": "0670030050",
+                "billCode": "0670030050",
+                "packageFeeList": [
+                    {
+                        "packageNo": "packageNo_001",
+                        "actualWeight": 1.0,
+                        "discountFeeAmt": 0.0
+                    },
+                    {
+                        "packageNo": "packageNo_004",
+                        "actualWeight": 2.0,
+                        "discountFeeAmt": 0.0
+                    },
+                    {
+                        "packageNo": "packageNo_002",
+                        "actualWeight": 32.0,
+                        "discountFeeAmt": 0.0
+                    },
+                    {
+                        "packageNo": "packageNo_003",
+                        "actualWeight": 3.0,
+                        "discountFeeAmt": 0.0
+                    }
+                ]
+            },
+            {
+                "success": true,
+                "errorSource": "SHIVA-OMS-DMS",
+                "errorCode": "1000",
+                "errorMessage": "成功",
+                "feeTypeCode": "1042",
+                "discountType": "price_per_object",
+                "discountValue": 1.0,
+                "feeAmt": 4.0,
+                "discountFeeAmt": 3.0,
+                "prefFeeAmt": 1.0,
+                "custCode": "0670030050",
+                "billCode": "0670030050",
+                "packageFeeList": [
+                    {
+                        "packageNo": "packageNo_001",
+                        "actualWeight": 1.0,
+                        "discountFeeAmt": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_004",
+                        "actualWeight": 2.0,
+                        "discountFeeAmt": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_002",
+                        "actualWeight": 32.0,
+                        "discountFeeAmt": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_003",
+                        "actualWeight": 3.0,
+                        "discountFeeAmt": 1.0
+                    }
+                ]
+            },
+            {
+                "success": true,
+                "errorSource": "SHIVA-OMS-DMS",
+                "errorCode": "1000",
+                "errorMessage": "成功",
+                "feeTypeCode": "1003",
+                "discountType": "cod_fee_rate",
+                "discountValue": 0.015,
+                "feeAmt": 0.72,
+                "discountFeeAmt": 0.57,
+                "prefFeeAmt": 0.15,
+                "custCode": "0670030050",
+                "billCode": "0670030050"
+            },
+            {
+                "success": true,
+                "errorSource": "SHIVA-OMS-DMS",
+                "errorCode": "1000",
+                "errorMessage": "成功",
+                "feeTypeCode": "1047",
+                "discountType": "price_per_object",
+                "discountValue": 4.0,
+                "feeAmt": 15.0,
+                "discountFeeAmt": 28.0,
+                "prefFeeAmt": -13.0,
+                "custCode": "0670030050",
+                "billCode": "0670030050",
+                "discountMeterageWeight": 7.0,
+                "packageFeeList": [
+                    {
+                        "packageNo": "packageNo_001",
+                        "actualWeight": 1.0,
+                        "discountFeeAmt": 4.0,
+                        "billingWeight": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_004",
+                        "actualWeight": 2.0,
+                        "discountFeeAmt": 8.0,
+                        "billingWeight": 2.0
+                    },
+                    {
+                        "packageNo": "packageNo_002",
+                        "actualWeight": 32.0,
+                        "discountFeeAmt": 4.0,
+                        "billingWeight": 1.0
+                    },
+                    {
+                        "packageNo": "packageNo_003",
+                        "actualWeight": 3.0,
+                        "discountFeeAmt": 12.0,
+                        "billingWeight": 3.0
+                    }
+                ]
+            }
+        ]
+    }
+}

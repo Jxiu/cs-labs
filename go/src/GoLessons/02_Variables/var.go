@@ -1,28 +1,31 @@
 package main
-/* 
+
+/*
 	声明变量的四种方式
- */
- import(
+*/
+import (
 	"fmt"
- )
- // 声明全局变量 方法1、2、3是可以使用的
- var NONE int
- var A float32 = 3.14
- var B int64 = 123456789
- var C string = "hello world"
- var CC string = `aa
+)
+
+// 声明全局变量 方法1、2、3是可以使用的
+var NONE int
+var A float32 = 3.14
+var B int64 = 123456789
+var C string = "hello world"
+var CC string = `aa
  aa\n 多行
  字符串`
- var D bool = true
- var E byte = 'a' // byte类型 int8
- var F rune = '中' //unicode编码 int32
- var G complex64 = 1 + 2i //复数
- var H uint8 = 255 //无符号数
+var D bool = true
+var E byte = 'a'         // byte类型 int8
+var F rune = '中'         //unicode编码 int32
+var G complex64 = 1 + 2i //复数
+var H uint8 = 255        //无符号数
 
- var G_A = 1
+var G_A = 1
+
 // 第四种方法,不能声明全局变量
 // G_4 := 1
-func main(){
+func main() {
 	// 1.声明一个变量默认值为0
 	var a int
 	fmt.Println("a =", a)
@@ -69,13 +72,13 @@ func main(){
 
 	//--------------------
 	// 声明多个变量
-	var xx,yy int = 100,200
+	var xx, yy int = 100, 200
 	fmt.Println("xx =", xx, ", yy =", yy)
-	var kk,ll = 11,"goslin"
+	var kk, ll = 11, "goslin"
 	fmt.Println("kk =", kk, ", ll =", ll)
 
-	var(
-		vv int = 100
+	var (
+		vv        int  = 100
 		isSuccess bool = true
 	)
 	fmt.Println("vv =", vv, ", isSuccess =", isSuccess)
